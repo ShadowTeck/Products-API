@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Uploader</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="link" href="index.html">MONEY.COM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a id="link" href="./products.html" class="nav-link">
+                    View Products
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" href="./cart.html" class="nav-link">
+                  Cart
+                </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <form class="form file-form">
+        <h4>File Upload</h4>
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id='name' class="form-input" value="smile">
+        </div>
+        <div class="form-row">
+            <label for="price">Price</label>
+            <input id="price" type="text" class="form-input" value="150.99">
+        </div>
+        <div class="form-row">
+            <label for="image">Image</label>
+            <input id="image" type="file" class="form-input" accept="image/*">
+        </div>
+        <button class="btn btn-block" type="submit">Add Product</button>
+        <p id="success">SUCCESS</p>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
